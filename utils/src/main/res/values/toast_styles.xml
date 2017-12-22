@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ToastImageStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+
+    <style name="ToastImageStyle.ToastIcon">
+        <item name="android:layout_height">@dimen/toast_icon_height</item>
+        <item name="android:layout_width">@dimen/toast_icon_height</item>
+    </style>
+
+
+    <style name="ToastTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/toast_transparent</item>
+        <item name="android:textColorHint">#cecece</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">@dimen/toast_text_size</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingLeft">0dp</item>
+    </style>
+
+    <style name="ToastTextStyle.Toast">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">@dimen/toast_text_size</item>
+        <item name="android:shadowColor">#BB000000</item>
+        <item name="android:shadowRadius">2.75</item>
+        <item name="android:paddingTop">@dimen/toast_padding_size</item>
+        <item name="android:paddingBottom">@dimen/toast_padding_size</item>
+        <item name="android:paddingRight">@dimen/toast_padding_size</item>
+        <item name="android:paddingLeft">@dimen/toast_padding_size</item>
+    </style>
+
+</resources>

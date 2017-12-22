@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_create_A"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="建筑A" />
+
+    <Button
+        android:id="@+id/btn_create_B"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="建筑B" />
+
+
+    <Button
+        android:id="@+id/btn_work"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="工作" />
+
+    <Button
+        android:id="@+id/btn_clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="清除" />
+
+</LinearLayout>

@@ -1,0 +1,1 @@
+include ':app', ':utils', ':design', ':custom_widget_project'
