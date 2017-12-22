@@ -41,20 +41,16 @@ public class ToastUtils2 {
     }
 
     private void showToast(final Toast _toast) {
-        new Thread(new Runnable() {
+        getInstance().mMainHandler.post(new Runnable() {
+            @Override
             public void run() {
-                getInstance().mMainHandler.post(new Runnable() {
-                    @Override
-                    public void run() {
-                        if (getInstance().mToast != null) {
-                            getInstance().mToast.cancel();
-                        }
-                        getInstance().mToast = _toast;
-                        getInstance().mToast.show();
-                    }
-                });
+                if (getInstance().mToast != null) {
+                    getInstance().mToast.cancel();
+                }
+                getInstance().mToast = _toast;
+                getInstance().mToast.show();
             }
-        }).start();
+        });
     }
 
     public synchronized static void cancleToast() {
